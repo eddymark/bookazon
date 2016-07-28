@@ -46,11 +46,11 @@ and open the template in the editor.
                     <input type="password" class="form-control" name="pwd" placeholder="Enter password">
                 </div>
                 <div class="form-group">
-                    <label for="pwd">comfirm Password:</label>
+                    <label for="pwd2">comfirm Password:</label>
                     <input type="password" class="form-control" name="pwd2" placeholder="Enter password">
                 </div>
 
-                <button type="submit" class="btn btn-default"><a href="http://inft.me/~eddy/bookazon/conformation.php">Submit</a></button>
+                <input class ="button" type="submit" value="submit"></input>
             </form>
         </div>
 
