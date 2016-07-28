@@ -26,10 +26,19 @@ and open the template in the editor.
                     <label for="pwd">Password:</label>
                     <input type="password" class="form-control" id="pwd" placeholder="Enter password">
                 </div>
+                <div class="form-group">
+                    <label for="pwd">comfirm Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+                
+                
+                
+                
+                
                 <div class="checkbox">
                     <label><input type="checkbox"> Remember me</label>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default"><a href="http://inft.me/~eddy/comfirmation.php">Submit</a></button>
             </form>
         </div>
 

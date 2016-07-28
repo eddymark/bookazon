@@ -16,7 +16,7 @@ and open the template in the editor.
         
         <h1>Log In</h1>
        <div class="container">
-            <h2>Vertical (basic) Form</h2>
+            <h2>bookazon log in </h2>
             <form role="form">
                 <div class="form-group">
                     <label for="email">Email:</label>
