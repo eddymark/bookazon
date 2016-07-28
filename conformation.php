@@ -10,9 +10,12 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <h1>hello </h1>
-        <?php
-        echo"hello user ";
-        ?>
+
+
+
+       
+        Your email address is: <?php echo $_POST["email"]; ?><br>
+        your password is: <?php echo $_POST("pwd"); ?>
+
     </body>
 </html>

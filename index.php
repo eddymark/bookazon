@@ -13,25 +13,23 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>hello  welcome to bookazon </h1>
 
-        <div class="container">
-            <h2>Vertical (basic) Form</h2>
-            <form role="form">
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.php">Bookazon</a>
                 </div>
-                <div class="form-group">
-                    <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-                </div>
-                <div class="checkbox">
-                    <label><input type="checkbox"> Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-default"><a href="http://inft.me/~eddy/bookazon/conformation.php">Submit</a></button>
-            </form>
-        </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="#">null</a></li>
+                    <li><a href="#">null</a></li> 
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="register.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
 
 
 
