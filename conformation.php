@@ -15,7 +15,15 @@ and open the template in the editor.
 
        
         Your email address is: <?php echo $_POST["email"]; ?><br>
-        your password is: <?php echo $_POST("pwd"); ?>
+        your password is: <?php echo $_POST["pwd"]; ?>
+        </head>
+
+ <p>Date created 
+<?php
+ echo date('l, F dS Y.');
+ ?>
+ </p>
+
 
     </body>
 </html>
