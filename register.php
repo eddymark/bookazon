@@ -49,6 +49,8 @@ and open the template in the editor.
                     <label for="pwd2">comfirm Password:</label>
                     <input type="password" class="form-control" name="pwd2" placeholder="Enter password">
                 </div>
+              
+                
 
                 <input class ="button" type="submit" value="submit"></input>
             </form>
