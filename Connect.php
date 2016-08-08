@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
+
         <?php
         $link = mysqli_connect('localhost', 'eddy', 'dtycts16');
         if (!$link) {
@@ -23,13 +12,12 @@ and open the template in the editor.
             exit();
         }
         if (!mysqli_select_db($link, 'eddy')) {
-            $output = 'Unable to locate the joke database.';
+            $output = 'Unable to locate the Eddy database.';
             include 'output.html.php';
             exit();
         }
+        
+      
         $output = 'Database connection established.';
         include 'output.html.php';
         ?>
-
-    </body>
-</html>

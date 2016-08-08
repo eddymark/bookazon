@@ -13,6 +13,7 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <?php include 'Connect.php';?>
         
         
          <nav class="navbar navbar-inverse">
@@ -36,19 +37,19 @@ and open the template in the editor.
         
        <div class="container">
             <h2>bookazon log in </h2>
-            <form role="form">
+            <form role="form" action="conformation.php" method="POST">
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Enter email">
                 </div>
                 <div class="form-group">
                     <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                    <input name="pwd" type="password" class="form-control" id="pwd" placeholder="Enter password">
                 </div>
                 <div class="checkbox">
                     <label><input type="checkbox"> Remember me</label>
                 </div>
-                <button type="submit" class="btn btn-default"><a href="http://inft.me/~eddy/bookazon/conformation.php">Submit</a></button>
+                <button type="submit" class="btn btn-default"><a href="conformation.php">Submit</a></button>
             </form>
         </div>
     </body>

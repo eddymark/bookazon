@@ -10,20 +10,29 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <?php
+        include 'Connect.php';
+
+        $email = $_POST('email');
+        $pwd = $_POST('pwd');
+        echo 'Welcome to the website, ' .
+      
+
+        $sql = "INSERT INTO Customer (Email,accountPassword)
+                values ('$email','$pwd')";
+
+        if (mysqli_query($link, $sql)) {
+            echo "New record created successfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . mysqli_error($link);
+        }
+        mysqli_close($link);
+        ?>
 
 
 
-       
-        Your email address is: <?php echo $_POST["email"]; ?><br>
-        your password is: <?php echo $_POST["pwd"]; ?>
-        </head>
-
- <p>Date created 
-<?php
- echo date('l, F dS Y.');
- ?>
- </p>
 
 
-    </body>
-</html>
+
+        </body>
+        </html>

@@ -13,7 +13,9 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <?php include 'Connect.php';?>
 
+       
 
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -31,9 +33,11 @@ and open the template in the editor.
                 </ul>
             </div>
         </nav>
+        
 
         <h1>Register</h1>
 
+        <!-- this is the register section -->
         <div class="container">
             <h2>Register</h2>
             <form action="conformation.php" method="POST">
@@ -55,6 +59,8 @@ and open the template in the editor.
                 <input class ="button" type="submit" value="submit"></input>
             </form>
         </div>
+        
+      
 
     </body>
 </html>

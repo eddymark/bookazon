@@ -13,6 +13,8 @@ and open the template in the editor.
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
+        
+        <?php include 'Connect.php';?>
 
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
