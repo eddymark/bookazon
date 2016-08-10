@@ -7,8 +7,8 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
-        
-        <?php include 'Connect.php';?>
+
+        <?php include 'Connect.php'; ?>
 
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -26,6 +26,23 @@
                 </ul>
             </div>
         </nav>
+
+        <?php
+        $sql = INSERT INTO `eddy`.`book` (`quantity`, `bookIBSM`, `bookTitle`, `bookGenre`, `bookPrice`)
+        VALUES ('12', '9118716', 'how to hunt', 'Wild', '20.00')
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while ($row = $result->fetch_assoc()) {
+                echo "<br> quantitiy: " . $quantitiy["id"] . " - bookibsm: " . $row["bookibsm"] . " " . $booktitle["booktitle"] . "<br>";
+            }
+        } else {
+            echo "0 results";
+        }
+
+        $conn->close();
+        ?>  
 
 
 
